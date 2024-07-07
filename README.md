@@ -6,9 +6,9 @@ With the advancement of generative models like GANs, we can generate an unbounde
 
 ### Methodology
 1. **Hard Sample Mining (HSM) with latent code optimization, Dataset Smoothing, and Batch Norm statistics Adaptation (BNA)**
-2. 
-3. **GAN Distillation**
-4. 
+   ![Framework](https://github.com/astitvaaryan/Learning-from-Synthetic-Data/blob/main/Training%20Models%20from%20Generated%20Images.png)
+2. **GAN Distillation**
+   
 5. **This Dataset Does Not Exist: Training Models from Generated Images**
    - Authors: Victor Besnier, Himalaya Jain, Andrei Bursuc, Matthieu Cord, Patrick Pérez
    - Summary: ...

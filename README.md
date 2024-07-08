@@ -17,7 +17,7 @@ This method explores the effectiveness of training machine learning models using
 - **Dataset Smoothing (DS):** Dataset Smoothing aims to enhance visual diversity by partially replacing generated training data with new samples each epoch. This approach ensures a diverse yet gradually changing dataset, thus improving classifier performance.
 - **Batch Norm Statistics Adaptation (BNA):** Batch Normalization stabilizes the distribution of hidden activations by transforming the output of a layer to have zero mean and unit variance. This technique adapts BN statistics to improve training stability and performance when using synthetic data.
 
-We have implemented the following techniques from this paper:
+We have implemented the following techniques from this paper on the Imagenet-10 dataset:
 [This Dataset Does Not Exist: Training Models from Generated Images](https://arxiv.org/pdf/1911.02888)
 
 2. **GAN Distillation**
@@ -36,5 +36,5 @@ This encourages the GAN to produce samples that are inherently difficult for the
 - **Training and Fine-Tuning:** During training, the classifier and generator are alternately fine-tuned for several epochs. This iterative process helps the classifier improve by training on synthetic hard samples, while the generator adapts to the classifier's evolving feature space.
 - **Result:** The approach was tested using the AlexNet classifier.The GAN distillation method significantly improved classification performance, even with larger fractions of the available training data. By augmenting the dataset with synthetic hard samples, the classifier achieved higher accuracy compared to the baseline.
 
-We have implemented the following techniques from this paper:
+We have implemented the following techniques from this paper on the Cifar-10 dataset:
 [Self-improving classification performance through GAN distillation](https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/papers/Pennisi_Self-Improving_Classification_Performance_Through_GAN_Distillation_ICCVW_2021_paper.pdf)

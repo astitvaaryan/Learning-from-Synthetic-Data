@@ -40,6 +40,9 @@ This encourages the GAN to produce samples that are inherently difficult for the
 - **Training and Fine-Tuning:** During training, the classifier and generator are alternately fine-tuned for several epochs. This iterative process helps the classifier improve by training on synthetic hard samples, while the generator adapts to the classifier's evolving feature space.
 - **Result:** The approach was tested using the AlexNet classifier. The GAN distillation method significantly improved classification performance, even with larger fractions of the available training data. By augmenting the dataset with synthetic hard samples, the classifier achieved higher accuracy compared to the baseline.
 
+## GAN Distillation
+![GAN Distillation Diagram](GAN_Distillation.png)
+*Figure: GAN-based Knowledge Distillation — generates and distills hard samples for better student model performance.*
 
 We have implemented the following techniques from this paper on the Cifar-10 dataset:
 [Self-improving classification performance through GAN distillation](https://openaccess.thecvf.com/content/ICCV2021W/ILDAV/papers/Pennisi_Self-Improving_Classification_Performance_Through_GAN_Distillation_ICCVW_2021_paper.pdf)
